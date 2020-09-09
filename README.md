@@ -1,2 +1,2 @@
 # My_Website
- A personal website built using html, css, and javascript
+ How to view? Download package and open index.html in a browser.
