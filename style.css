@@ -45,9 +45,33 @@ html {
     font-family: 'Roboto',
     serif;
     font-size: 8rem;
-    font-weight: 300;
+    font-weight: 320;
     color: seashell;
     line-height: 9rem;
     letter-spacing: .2rem;
-    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .4);
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+}
+
+.banner p {
+    font-family: 'Kumbh Sans',
+    serif;
+    font-size: 4rem;
+    color: seashell;
+    width: 65%;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+    text-shadow:  .2rem .5rem rgba(0, 0, 0, .4);
+}
+
+.banner button {
+    width: 25rem;
+    height: 7rem;
+    background-color: seashell;
+    border: none;
+    font-family: 'Kufam', serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-shadow: .2rem .4rem rgba(0, 0, 0, .2);
+    box-shadow: .3rem .4rem rgba(0, 0, 0, .3);
+    cursor: pointer;
 }
