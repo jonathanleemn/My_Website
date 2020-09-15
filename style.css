@@ -127,3 +127,55 @@ html {
 
     }
 }
+
+.sidebar {
+    width: 40rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: seashell;
+}
+
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-link {
+    font-family: 'Roboto', serif;
+    font-size: 3.5rem;
+    color: #333333;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i {
+    font-size: 2.2rem;
+    margin: 3rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: slategrey;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.social-media i:hover {
+    background-color: steelblue;
+}
