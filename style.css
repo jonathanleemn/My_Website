@@ -152,6 +152,23 @@ html {
     font-family: 'Roboto', serif;
     font-size: 3.5rem;
     color: #333333;
+    position: relative;
+}
+
+.menu-link::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: steelblue;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;   /* avoid wrapping text*/
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-link:hover::before {
+    width: 100%;
 }
 
 .social-media {
