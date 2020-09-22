@@ -26,6 +26,11 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: right .8s;
+}
+
+.change .hamburger-menu {
+    right: 35rem;
 }
 
 .line {
@@ -33,6 +38,61 @@ html {
     height: .2rem;
     background-color: seashell;
     box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
+}
+
+.change .line {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.change .line-1 {
+    transform: 
+    rotate(45deg) translate(.3rem, .8rem);
+}
+
+.change .line-2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .line-3 {
+    transform: 
+    rotate(-45deg) translate(.3rem, -.8rem);
+}
+
+.hamburger-menu span {
+    position: absolute;
+    left: 5rem;
+    width: 12rem;
+    height: 5rem;
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', serif;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.hamburger-menu:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hamburger-menu span::before {
+    content: "";
+    position: absolute;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid slategray;
+    border-bottom: 1rem solid transparent;
+    border-top: 1rem solid transparent;
+    top: 50%;
+    left: -2rem;
+    transform: translateY(-50%);
+
 }
 
 /* height is set 200% of viewport*/
@@ -133,8 +193,13 @@ html {
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -40rem;
     background-color: seashell;
+    transition: right 0.5s;
+}
+
+.change .sidebar {
+    right: 0;
 }
 
 .menu {
