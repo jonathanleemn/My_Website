@@ -261,3 +261,112 @@ html {
 .social-media i:hover {
     background-color: steelblue;
 }
+
+.about-me {
+    width: 100%;
+    background-color: rgb(235, 226, 226);
+    padding-bottom: 15rem;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 10rem 0;
+}
+
+.section-heading {
+    font-family: 'Roboto', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-bottom: 6rem;
+}
+
+.underline {
+    width: 30rem;
+    height: .4rem;
+    background-color: tomato;
+}
+
+.services {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    row-gap: 4rem;
+}
+
+.service {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.service:nth-child(1) {
+    grid-column: 4 / 7;
+    grid-row: 1 / 3;
+}
+
+.service:nth-child(2) {
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+}
+
+.service:nth-child(3) {
+    grid-column: 4 / 7;
+    grid-row: 5 / -1;
+}
+
+.service:nth-child(4) {
+    grid-column: 11 / 14;
+    grid-row: 1 / 3;
+}
+
+.service:nth-child(5) {
+    grid-column: 12 / 15;
+    grid-row: 3 / 5;
+}
+
+.service:nth-child(6) {
+    grid-column: 11 / 14;
+    grid-row: 5 / -1;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.service-header i {
+    font-size: 4rem;
+    color: black;
+    margin-right: 2rem;
+}
+
+.service-header h3 {
+    font-family: 'Kufam', serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.service-text {
+    font-family: 'Kumbh Sans', serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.about-me-img-wrapper {
+    grid-column:  7 / 11;
+    grid-row: 3 / 6;
+    width: 100%;
+} 
+
+.about-me-img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    opacity: .85;
+}
