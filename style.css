@@ -361,7 +361,7 @@ html {
 
 .about-me-img-wrapper {
     grid-column:  7 / 11;
-    grid-row: 3 / 6;
+    grid-row: 2 / 6;
     width: 100%;
 } 
 
@@ -369,4 +369,102 @@ html {
     width: 100%;
     object-fit: cover;
     opacity: .85;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem 20rem 5rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.card {
+    width: 35rem;
+    height: 45rem;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    border-radius: .5rem;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+    border-radius: .5rem;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-info h2 {
+    font-family: 'Kufam', serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+.card-info h3 {
+    font-family: 'Kumbh Sans', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.card-info p {
+    font-family: 'Kufam', serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: white;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button {
+    width: 10rem;
+    height: 3rem;
+    background-color: tomato;
+    border: none;
+    font-family: 'Kufam', serif;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: white;
+    border-radius: .3rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
 }
