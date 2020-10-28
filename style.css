@@ -196,6 +196,7 @@ html {
     right: -40rem;
     background-color: seashell;
     transition: right 0.5s;
+    z-index: 100;
 }
 
 .change .sidebar {
@@ -467,4 +468,13 @@ html {
     color: white;
     border-radius: .3rem;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
